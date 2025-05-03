@@ -1,5 +1,12 @@
 # Xiegu-X6200-Research
 
+## Imagery
+[Base Unit PCB](./Imagery/Base%20Unit%20Board/)
+
+[Display Unit PCB](./Imagery/Display%20Unit%20Board/)
+
+[Misc](./Imagery/Misc/)
+
 ## Firmware Release Notes
 [V1.0.0](./Firmware%20Release%20Notes/V1.0.0.pdf)
 
@@ -15,12 +22,8 @@
 ## Enable Full TX
 [Basic Guide](./Full%20TX/README.md)
 
-## Imagery
-[Base Unit PCB](./Imagery/Base%20Unit%20Board/)
-
-[Display Unit PCB](./Imagery/Display%20Unit%20Board/)
-
-[Misc](./Imagery/Misc/)
+## Alsamixer
+[Configuration Notes](./Alsamixer/README.md)
 
 ## Console Logs
 [Normal Boot](./Console%20Logs/NormalBoot.md)
