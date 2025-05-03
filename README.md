@@ -22,5 +22,9 @@
 
 [Misc](./Imagery/Misc/)
 
+## Console Logs
+[Normal Boot](./Console%20Logs/NormalBoot.md)
+[Firmware Update](./Console%20Logs/FirmwareUpdate.md)
+
 ## Everything Else
 [Exploration Notes](./notes.md)
