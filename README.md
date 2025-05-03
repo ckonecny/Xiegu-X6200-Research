@@ -5,6 +5,8 @@
 
 [V1.0.1](./Firmware%20Release%20Notes/V1.0.1.pdf)
 
+[V1.0.3](./Firmware%20Release%20Notes/V1.0.3.pdf)
+
 ## Get Root
 [Basic Guide](./Get%20Rooted/README.md)
 
@@ -17,3 +19,6 @@
 [Display Unit PCB](./Imagery/Display%20Unit%20Board/)
 
 [Misc](./Imagery/Misc/)
+
+## Everything Else
+[Exploration Notes](./notes.md)
