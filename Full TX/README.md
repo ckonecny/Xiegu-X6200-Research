@@ -4,7 +4,7 @@ This assumes you have a terminal open to the radio either via SSH or serial.
 
 Serial speed: 115200
 
-## Firmware Version 1.0.1
+## Firmware Version 1.0.1 - 1.0.6
 1. Edit xgradio.conf: `nano /etc/xgradio/xgradio.conf`
 2. Set `fullband-tx` to `enable`
 
