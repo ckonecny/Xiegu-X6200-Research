@@ -1,6 +1,6 @@
 # Display Unit Images
 ## Annotated
-![image](./Annotated.jpg)
+![image](./Annotated.png)
 ## Front
 ![image](./Front.jpg)
 ![image](./Front%20-%20Left.jpg)
