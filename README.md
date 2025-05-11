@@ -30,5 +30,8 @@
 
 [Firmware Update](./Console%20Logs/FirmwareUpdate.md)
 
+## Header Exploration
+[Research](./Headers/)
+
 ## Everything Else
 [Exploration Notes](./notes.md)
