@@ -33,5 +33,8 @@
 ## Header Exploration
 [Research](./Headers/)
 
+## Bandplan Display Patch
+[CEPT/IARU-R1 band-edge overlay instead of the US license-class display](./Bandplan%20Display%20Patch/README.md)
+
 ## Everything Else
 [Exploration Notes](./notes.md)
