@@ -31,6 +31,13 @@ Everything below assumes you already have root SSH access to your X6200 (see
 or the `fullband-tx` setting in `/etc/xgradio/xgradio.conf` — TX behavior of the radio is
 completely unaffected by this patch.
 
+Before (stock, 40 m band, VFO at 7.155 MHz) vs. after (patched, same VFO position) — both
+grabbed as pixel-exact on-device screenshots, see the methodology section for how:
+
+| Before | After |
+|---|---|
+| ![Before: stock US-license-class overlay](./before.png) | ![After: single CEPT/IARU-R1 band-edge bar](./after.png) |
+
 ---
 
 ## Background: what is this bar, actually?
