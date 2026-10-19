@@ -72,6 +72,15 @@ So: the codec is correct, portable C with no non-portable dependencies that trip
 build, and runs under ARM emulation exactly as expected. This de-risks the core building
 block before any device-specific integration work starts.
 
+## Getting this onto the device
+
+[`prebuilt-armhf/`](./prebuilt-armhf/) has the statically-linked armhf binaries built and
+verified this session (`gen_ft8_static`, `decode_ft8_static`, `test_ft8_static`) plus the
+`scp`/`ssh` commands to smoke-test them on a real X6200 — see that folder's README for the
+exact steps. Static linking means the target's own libc version doesn't matter, so these can
+go straight onto the device without a cross-toolchain on whichever machine has SSH access to
+it.
+
 ## Still open — needs the real device
 
 QEMU user-mode emulation proves the binary is correct and runs; it says nothing about
