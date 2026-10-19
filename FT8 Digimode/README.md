@@ -9,6 +9,17 @@ FT8/FT4 could instead run **on the radio itself**, inside the legal amateur band
 limits the radio already operates in — no RF/TX-range change of any kind, purely a
 baseband/software question.
 
+**Why this has to mean on the physical display, not a companion device.** The X6200 already
+pairs with phone FT8 apps over Bluetooth (CAT + audio), and that already works today. A
+version of this project that just serves a web page over Wi-Fi for a phone/laptop to drive
+would be a worse rebuild of something that already exists — still a second device, just over
+a different link. The only thing actually worth building is the case that removes the second
+device entirely: FT8 decoded/shown/operated from the radio's own screen and
+buttons/encoder — useful for POTA/SOTA or just not wanting a phone out. That sets the target
+for "Still open" below: the end goal is native UI integration (same binary-patching approach
+as the [bandplan display patches](../Bandplan%20Display%20Patch/README.md)), not a
+network-facing control surface.
+
 ## Starting point: survey of the X6100's alternative-firmware ecosystem
 
 The X6200's older sibling, the Xiegu X6100, has a mature open-source alternative firmware
@@ -95,8 +106,17 @@ this sandboxed session:
   the X6200 run NTP over Wi-Fi, or does its RTC drift without it?
 - Capture real audio from the existing ALSA "U-DIGI" input path (same device already used for
   RTTY/PSK) and confirm `ft8lib`'s decoder can lock onto it (sample rate, levels, DC offset).
-- Only after both of those hold up: look at TX (reusing the existing PTT mechanism) and, much
-  later, any UI integration.
+- Only after both of those hold up: look at TX (reusing the existing PTT mechanism).
+
+A Wi-Fi/web-page control surface is only worth building as a **throwaway debug aid** during
+that work (fastest way to see decoded messages while the above is still being verified) — not
+as the project's deliverable, since Bluetooth-to-phone FT8 already covers that case today.
+The actual target, once the above holds up, is native integration into the existing physical
+display/menu — a new screen/state in the running Qt UI binary, driven by the existing
+buttons/rotary encoder, following the same disassemble-hypothesize-patch-verify approach as
+the bandplan display patches. That's a materially bigger step than those patches (finding and
+hooking into the menu state machine and text rendering, not just rewriting a lookup table),
+so budget for it as its own phase once the groundwork above is confirmed.
 
 ## Licence notes for future code
 
