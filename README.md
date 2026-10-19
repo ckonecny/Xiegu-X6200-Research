@@ -43,5 +43,10 @@ on the patch above to show a full per-band CW/DATA/BAKEN/Voice breakdown instead
 Methodology: [Using Claude Code for hands-on radio hacking](./Bandplan%20Display%20Patch/RESEARCH.md)
 — not a finding, but the working method behind both patches above.
 
+## FT8 Digimode
+[Native FT8/FT4 feasibility research](./FT8%20Digimode/README.md) — survey of the X6100
+alternative-firmware ecosystem for reusable parts, plus a verified build/cross-compile of the
+`ft8lib` codec for the X6200's ARM target.
+
 ## Everything Else
 [Exploration Notes](./notes.md)
